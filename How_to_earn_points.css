@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('Screenshot 2025-04-11 162318.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.header {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.search-box input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 45px;
+    border: none;
+    width: 250px;
+    text-align: center;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.search-box button:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+
+.rewards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.reward-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.reward-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reward-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.reward-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.reward-value {
+    font-size: 24px;
+    color: #ff6f61;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.progress-bar-wrapper {
+    background: #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 20px;
+    margin: 10px auto 30px;
+    width: 100%;
+}
+
+#progress-bar {
+    background: #28a745;
+    height: 100%;
+    width: 0%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    transition: width 0.3s ease-in-out;
+}
+
+.qr-code-section {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.qr-code-section img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.qr-code-section p {
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #007bff;
+}
+
+h2 {
+    color: white;
+    margin-top: 40px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points And Rewards</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="How_to_earn_points.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Points & Rewards</div>
+
+        <!-- Step Progress -->
+        <div class="progress-container">
+            <h2>How to Earn Points</h2>
+            <div class="progress-bar-wrapper">
+                <div id="progress-bar">0% Completed</div>
+            </div>
+        </div>
+
+        <!-- Step-by-Step Cards -->
+        <div class="rewards" id="steps-section">
+            <div class="reward-card" onclick="completeStep(0)">
+                <div class="reward-icon"><i class='bx bx-user-plus'></i></div>
+                <div class="reward-title">Step 1: Sign Up</div>
+                <p><a href="/signup" target="_blank">Create your account</a> to start earning.</p>
+            </div>
+
+            <div class="reward-card" onclick="completeStep(1)">
+                <div class="reward-icon"><i class='bx bx-id-card'></i></div>
+                <div class="reward-title">Step 2: Complete Profile</div>
+                <p><a href="/profile" target="_blank">Finish your profile</a> for bonus points.</p>
+            </div>
+
+            <div class="reward-card" onclick="completeStep(2)">
+                <div class="reward-icon"><i class='bx bx-calendar-check'></i></div>
+                <div class="reward-title">Step 3: Daily Check-in</div>
+                <p><a href="/daily-checkin" target="_blank">Check in now</a> and earn daily points.</p>
+            </div>
+
+            <div class="reward-card" onclick="completeStep(3)">
+                <div class="reward-icon"><i class='bx bx-user-voice'></i></div>
+                <div class="reward-title">Step 4: Refer Friends</div>
+                <p><a href="/refer" target="_blank">Invite others</a> and earn referral rewards.</p>
+            </div>
+
+            <div class="reward-card" onclick="completeStep(4)">
+                <div class="reward-icon"><i class='bx bx-trophy'></i></div>
+                <div class="reward-title">Step 5: Complete Challenges</div>
+                <p><a href="/challenges" target="_blank">Join events</a> for extra rewards.</p>
+            </div>
+
+            <div class="reward-card" onclick="completeStep(5)">
+                <div class="reward-icon"><i class='bx bx-gift'></i></div>
+                <div class="reward-title">Step 6: Redeem Rewards</div>
+                <p><a href="/rewards" target="_blank">Spend points</a> in the rewards store.</p>
+            </div>
+        </div>
+
+        <!-- QR Code -->
+        <div id="qr-code-section" class="qr-code-section">
+            <img id="qr-code-img" src="" alt="QR Code">
+            <p>Scan this QR code to learn more!</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="How_to_earn_points.js"></script>
+</body>
+</html>
